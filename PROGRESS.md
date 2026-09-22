@@ -1,33 +1,25 @@
 # Execution Progress & Roadmap: Kero Portfolio (v4)
 
-## Current Status: Editorial Developer Studio Redesign Completed
+## Current Status: Light-First White + Green + Black Design Completed
 
 ### Completed Tasks:
-- [x] **Creative Direction Shift**: Moved away from AI-generated "dark mode SaaS dashboard" aesthetic (emerald status pills, indigo accents, monospace metadata everywhere, repetitive cards).
-- [x] **Design Tokens & Theming**:
-  - Implemented warm near-black canvas (`#0C0C0B`), off-white foreground (`#F1EFE9`), muted stone (`#A7A39A`, `#6F6B63`), and a single vermilion/warm orange accent (`#E56A3D`) in `app/globals.css`.
-  - Added `Newsreader` editorial serif from `next/font/google` for restrained headline emphasis.
-- [x] **Hero Section Redesign**:
-  - Simplified identity to natural `Kero / Full-stack developer`.
-  - Editorial headline: *"I turn ideas into working web products."* with serif accent.
-  - Realistic browser window previewing the real AliMart storefront UI.
-- [x] **Selected Work Overhaul (Centerpiece)**:
-  - Replaced repetitive card structure with 3 distinct editorial layouts.
-  - Project 01 (AliMart): Text left / Real storefront UI right.
-  - Project 02 (Environmental Impact Dashboard): Simulated environmental charts left / Text right (accurately described as simulated data).
-  - Project 03 (Next.js SaaS Foundation): Full-width application window with text underneath.
-- [x] **Typographic Service & Process Sections**:
-  - Redesigned "What I build" into an editorial typographic list separated by thin rules.
-  - Redesigned "How I work" into a scannable 3-step sequence: `01 — Understand`, `02 — Build`, `03 — Refine`.
-- [x] **About & Contact Redesign**:
-  - Rewrote "A little about me" with mature, honest personal voice (MIS student, Next.js/TS/Python/Postgres, focus on solid, maintainable code).
-  - Simplified "Let's talk." into a natural conversational closing with direct WhatsApp, Email, and 1-click copy email.
-- [x] **Navbar & Footer Refinement**:
-  - Quieter navbar with subtle availability indicator and simple links (`Work`, `About`, `Contact`).
-  - Understated footer with direct links and location.
-- [x] **Documentation & Rules Synchronization**:
-  - Rewrote `DESIGN.md` in clear, human design language.
-  - Updated `AGENTS.md` communication style.
-  - Rewrote `README.md` as a personal, client-friendly project overview.
-  - Updated `PROGRESS.md`.
-
+- [x] **Visual Identity Transformation**:
+  - Transitioned from warm black + vermilion to Light-First **White + Green + Black Text**.
+  - Light mode configured as default (`#F7F8F5` background, `#FFFFFF` surfaces, `#111412` primary text, `#00A86B` primary green, `#DDE3DE` borders).
+  - Dark mode supported seamlessly (`#0D110F` background, `#151A17` surfaces, `#F3F6F2` primary text, `#20C67A` primary green, `#27302B` borders).
+  - Added theme toggle (sun/moon icon) in navbar + keyboard shortcut ('d').
+- [x] **Typography & Font Modernization**:
+  - Standardized on `Inter` as primary sans-serif across all headings and body copy.
+  - Restricted `Geist Mono` strictly to technical tags, code snippets, and metadata.
+  - Removed `Newsreader` (serif) from font system.
+- [x] **Client-First, Developer-Second Content & Hierarchy**:
+  - Hero section highlights business value: *"I turn ideas into working web products."* with green CTA and realistic AliMart storefront centerpiece.
+  - Selected Work preserves 3 distinct layouts with client-first problem/outcome descriptions and green interaction details.
+  - Accurately labeled Environmental Dashboard as simulated data visualization.
+  - Capabilities structured as an editorial typographic list ("What I build") focusing on business outcomes.
+  - Process structured as a transparent 3-step collaboration model ("How I work": Understand, Build, Refine).
+  - About section updated with mature, practical tone emphasizing business understanding and clean engineering.
+  - Contact section features primary green WhatsApp CTA, direct email, and 1-click copy email feedback.
+- [x] **Documentation Synchronization**:
+  - Updated `DESIGN.md` with complete design system guidelines.
+  - Updated `PROGRESS.md` with execution milestones.

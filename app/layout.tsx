@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Geist_Mono, Newsreader } from "next/font/google";
+import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
@@ -11,13 +11,6 @@ const fontSans = Inter({
   display: "swap",
 });
 
-const fontSerif = Newsreader({
-  subsets: ["latin"],
-  variable: "--font-serif",
-  display: "swap",
-  style: ["normal", "italic"],
-});
-
 const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
@@ -25,7 +18,7 @@ const fontMono = Geist_Mono({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#0C0C0B",
+  themeColor: "#F7F8F5",
   width: "device-width",
   initialScale: 1,
 };
@@ -102,7 +95,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn("antialiased", fontSans.variable, fontSerif.variable, fontMono.variable)}
+      className={cn("antialiased", fontSans.variable, fontMono.variable)}
     >
       <head>
         <script
@@ -113,8 +106,8 @@ export default function RootLayout({
       <body className="min-h-screen bg-background font-sans text-foreground">
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
-          forcedTheme="dark"
+          defaultTheme="light"
+          enableSystem
           disableTransitionOnChange
         >
           {children}
