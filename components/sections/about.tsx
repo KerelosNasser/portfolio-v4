@@ -1,109 +1,87 @@
 import React from "react";
 import { Container } from "@/components/layout/container";
 import { profileData } from "@/lib/data/profile";
-import { Award, BookOpen, CheckCircle, Code } from "lucide-react";
 
 export function About() {
   return (
-    <section id="about" className="py-20 md:py-28 lg:py-32 border-b border-white/[0.08]">
+    <section id="about" className="py-24 md:py-32 lg:py-40 border-b border-white/[0.08]">
       <Container>
         {/* Section Header */}
-        <div className="max-w-2xl space-y-3 mb-12 md:mb-16">
-          <div className="flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-slate-400" />
-            <p className="font-mono text-xs uppercase tracking-wider text-slate-400">
-              About Kero
-            </p>
-          </div>
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Practical engineering grounded in business systems.
+        <div className="space-y-3 max-w-xl mb-16 md:mb-24">
+          <p className="text-xs font-mono uppercase tracking-wider text-[#A7A39A]">
+            04 — A little about me
+          </p>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#F1EFE9]">
+            Practical thinking, clear code.
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* Left Column: Background narrative */}
-          <div className="lg:col-span-7 space-y-6 text-slate-300 leading-relaxed text-sm sm:text-base">
+        {/* Asymmetric 2-Column Editorial Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          {/* Left Column: Narrative (7 cols) */}
+          <div className="lg:col-span-7 space-y-6 text-base sm:text-lg text-[#A7A39A] leading-relaxed">
             <p>
-              I am a Junior Full Stack Developer based in Egypt, studying Management Information
-              Systems (MIS) at Alexandria University. My coursework provides a strong foundation
-              in business processes, systems analysis, and database design, which directly informs
-              how I approach software development.
+              I&apos;m Kero, a full-stack developer based in Alexandria, Egypt.
             </p>
             <p>
-              Rather than chasing fleeting development hype or over-engineering solutions with
-              unnecessary microservices, I prioritize writing clean, maintainable code that directly
-              solves the client&apos;s problem. I believe a good web application should be fast,
-              intuitive to use, and straightforward to maintain.
+              I study Management Information Systems (MIS) at Alexandria University, which gives me
+              a useful blend of business understanding and technical execution. Before writing
+              code, I look closely at data structures, user workflows, and practical business needs.
             </p>
             <p>
-              I actively build and ship projects with React, Next.js, TypeScript, Python/FastAPI,
-              and PostgreSQL, continuously expanding my practical engineering capabilities through
-              hands-on code.
+              Most of my time is spent building with Next.js, React, TypeScript, Python, and
+              PostgreSQL. I care about writing maintainable code with clear boundaries, so that when a
+              project grows, it remains fast, stable, and easy to build on.
             </p>
-
-            <div className="pt-2 flex flex-col sm:flex-row gap-4 text-xs font-mono text-slate-400">
-              <div className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-emerald-400 shrink-0" />
-                <span>Zero fake claims or inflated metrics</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-emerald-400 shrink-0" />
-                <span>All code verifiable on GitHub</span>
-              </div>
-            </div>
+            <p>
+              I prioritize practical architecture and clear interfaces over unnecessary complexity.
+              Every project in my portfolio is backed by public source code on GitHub.
+            </p>
           </div>
 
-          {/* Right Column: Verified Credentials Card */}
-          <div className="lg:col-span-5 space-y-4">
-            <div className="rounded-xl border border-white/[0.08] bg-[#0f1219] p-6 space-y-6">
-              <h3 className="font-mono text-xs uppercase tracking-wider text-slate-400">
-                Verified Credentials & Education
-              </h3>
+          {/* Right Column: Background & Principles (5 cols) */}
+          <div className="lg:col-span-5 space-y-8 lg:pl-6 border-t lg:border-t-0 lg:border-l border-white/[0.08] pt-8 lg:pt-0">
+            <div className="space-y-2">
+              <span className="font-mono text-xs uppercase tracking-wider text-[#6F6B63]">
+                Education
+              </span>
+              <p className="text-base font-semibold text-[#F1EFE9]">
+                {profileData.education.degree}
+              </p>
+              <p className="text-sm text-[#A7A39A]">
+                {profileData.education.institution}
+              </p>
+            </div>
 
-              {/* Education */}
-              <div className="flex items-start gap-3">
-                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/[0.04] border border-white/[0.08] shrink-0 text-slate-300">
-                  <BookOpen className="h-4 w-4" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-white">
-                    {profileData.education.degree}
-                  </p>
-                  <p className="text-xs text-slate-400">
-                    {profileData.education.institution}
-                  </p>
-                </div>
-              </div>
+            <div className="space-y-2">
+              <span className="font-mono text-xs uppercase tracking-wider text-[#6F6B63]">
+                Certification
+              </span>
+              <p className="text-base font-semibold text-[#F1EFE9]">
+                {profileData.certification.title}
+              </p>
+              <p className="text-sm text-[#A7A39A]">
+                Issued by {profileData.certification.issuer}
+              </p>
+            </div>
 
-              {/* Certification */}
-              <div className="flex items-start gap-3">
-                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-500/10 border border-emerald-500/20 shrink-0 text-emerald-400">
-                  <Award className="h-4 w-4" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-white">
-                    {profileData.certification.title}
-                  </p>
-                  <p className="text-xs text-slate-400">
-                    Issued by {profileData.certification.issuer}
-                  </p>
-                </div>
-              </div>
+            <div className="space-y-2">
+              <span className="font-mono text-xs uppercase tracking-wider text-[#6F6B63]">
+                Core Approach
+              </span>
+              <p className="text-sm text-[#A7A39A] leading-relaxed">
+                Practical architecture, clean component boundaries, strict types, and direct
+                communication.
+              </p>
+            </div>
 
-              {/* Approach summary */}
-              <div className="flex items-start gap-3 pt-2 border-t border-white/[0.06]">
-                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/[0.04] border border-white/[0.08] shrink-0 text-slate-300">
-                  <Code className="h-4 w-4" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-white">
-                    Core Development Philosophy
-                  </p>
-                  <p className="text-xs text-slate-400">
-                    Simplicity, typed reliability, performance, and transparent communication.
-                  </p>
-                </div>
-              </div>
+            <div className="space-y-2">
+              <span className="font-mono text-xs uppercase tracking-wider text-[#6F6B63]">
+                Location & Availability
+              </span>
+              <p className="text-sm text-[#F1EFE9]">
+                Alexandria, Egypt <span className="text-[#A7A39A]">• Open to remote freelance</span>
+              </p>
             </div>
           </div>
         </div>

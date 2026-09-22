@@ -5,9 +5,9 @@ export const profileData: Profile = {
   preferredName: "Kero",
   role: "Junior Full Stack Developer",
   availability: "Available for freelance projects",
-  headline: "I build modern web products from idea to production.",
+  headline: "I turn ideas into working web products.",
   valueProposition:
-    "I turn product concepts into functional, responsive web applications. From frontend interfaces and database schemas to APIs, authentication, and deployment, I deliver clean and maintainable software.",
+    "Full-stack developer focused on SaaS, business tools, dashboards, and modern web applications. I build the frontend, backend, database, and the parts in between.",
   location: "Egypt",
   education: {
     degree: "Management Information Systems (MIS)",

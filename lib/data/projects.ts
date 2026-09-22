@@ -3,21 +3,21 @@ import { Project } from "@/types";
 export const projectsData: Project[] = [
   {
     slug: "advanced-ecommerce",
-    title: "Advanced E-Commerce Storefront",
-    tagline: "High-performance retail storefront with dynamic filtering and stateful shopping experience.",
-    category: "Web Application",
+    title: "AliMart Storefront",
+    tagline: "A modern retail storefront with instant filtering, product search, and a persistent shopping cart.",
+    category: "E-Commerce / Web App",
     problem:
-      "Modern e-commerce storefronts require immediate responsiveness, fluid client-side navigation, and seamless product filtering without sluggish page reloads.",
+      "Online retail storefronts often feel sluggish when filtering products or browsing categories with repeated page reloads.",
     solution:
-      "Built a full-featured storefront using React 19 and Vite with instant client-side filtering, category browsing, responsive product grids, and persistent cart state management.",
+      "Built an instant-filtering retail storefront using React 19 and Vite. Shoppers can search, filter by multiple categories, inspect product details in modals, and manage cart items smoothly without page refreshes.",
     architecture:
-      "Engineered with React 19 component boundaries, Vite compilation for minimal latency, TypeScript contracts for product schemas, and Tailwind CSS + shadcn/ui for accessible styling.",
+      "Component-driven React 19 architecture with Vite for minimal latency, TypeScript for product schema safety, and Tailwind CSS with shadcn/ui for accessible styling.",
     technologies: ["React 19", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui"],
     features: [
-      "Dynamic multi-category filtering and real-time search",
-      "Persistent client-side shopping cart with instant quantity adjustments",
-      "Detailed product modal views and responsive image galleries",
-      "Mobile-optimized layout designed for touch-first navigation",
+      "Instant multi-category filtering and real-time product search",
+      "Persistent shopping cart with live quantity adjustment",
+      "Product detail modal views with responsive image galleries",
+      "Touch-friendly layout designed for mobile and desktop screens",
     ],
     githubUrl: "https://github.com/KerelosNasser/advanced_e_commerce",
     liveUrl: "https://advanced-e-commerce.vercel.app",
@@ -26,28 +26,28 @@ export const projectsData: Project[] = [
   {
     slug: "environmental-dashboard",
     title: "Environmental Impact Dashboard",
-    tagline: "Interactive data visualization dashboard analyzing simulated ecological metrics.",
-    category: "Analytics & Dashboard",
+    tagline: "Interactive dashboard built around simulated environmental data.",
+    category: "Data Visualization",
     problem:
-      "Complex environmental datasets are difficult to digest without clear visual hierarchy, responsive charting, and intuitive metric indicators.",
+      "Complex environmental datasets can be hard to interpret without clear visual hierarchy, readable charts, and intuitive metric indicators.",
     solution:
-      "Designed and developed an analytical dashboard featuring interactive time-series charts, status telemetry cards, and multi-metric comparisons using simulated environmental data.",
+      "Designed an interactive data visualization dashboard that maps simulated climate metrics—such as temperature variations and emissions—into readable, responsive charts and summary indicators.",
     architecture:
-      "Utilized TanStack Query for asynchronous data management, Recharts for responsive SVG visualizations, and Tailwind CSS v4 for clean grid structure.",
+      "Built with React 19, Vite, TanStack Query for asynchronous state handling, Recharts for responsive SVG visualizations, and Tailwind CSS for grid layout.",
     technologies: [
       "React 19",
       "TypeScript",
       "Vite",
-      "Tailwind CSS v4",
+      "Tailwind CSS",
       "TanStack Query",
       "Recharts",
       "Framer Motion",
     ],
     features: [
-      "Multi-parameter time-series charts for temperature and emission trends",
-      "Interactive telemetry cards displaying key simulated environmental indices",
-      "Dynamic data queries with asynchronous client-state handling",
-      "Fully responsive dashboard layout spanning desktop and tablet screens",
+      "Interactive time-series charts for temperature and emission trends",
+      "Simulated metric cards highlighting key environmental indicators",
+      "Asynchronous data queries with clear loading and active states",
+      "Responsive layout that adapts cleanly across desktop and mobile screens",
     ],
     githubUrl: "https://github.com/KerelosNasser/Enviroment-Dashboard",
     status: "repo",
@@ -55,19 +55,19 @@ export const projectsData: Project[] = [
   {
     slug: "saas-application-foundation",
     title: "Next.js SaaS Foundation",
-    tagline: "Production-oriented SaaS application foundation with modern App Router architecture.",
-    category: "SaaS & Full Stack",
+    tagline: "A structured baseline with App Router layouts, error tracking, and typed data flows.",
+    category: "SaaS / Full Stack",
     problem:
-      "Starting a new SaaS product requires a solid architectural baseline: reliable routing, responsive dashboard layouts, and error monitoring from day one.",
+      "Starting a new web app often means rebuilding the same foundation: layout structures, error monitoring, server component boundaries, and type definitions.",
     solution:
-      "Constructed a structured Next.js App Router codebase equipped with error tracking, modular layouts, and scalable TypeScript definitions ready for feature development.",
+      "Created a clean baseline using Next.js App Router, complete with responsive workspace navigation, Sentry error monitoring, and modular layout architecture ready for custom features.",
     architecture:
-      "Built on Next.js App Router with Server Components, integrated Sentry error monitoring for crash diagnostics, and utility-first Tailwind CSS styling.",
+      "Built with Next.js App Router using React Server Components, Sentry error tracking, TypeScript schemas, and utility-first Tailwind CSS.",
     technologies: ["Next.js (App Router)", "TypeScript", "Tailwind CSS", "Sentry"],
     features: [
-      "Next.js App Router foundation with server-first architecture",
-      "Sentry integration for automated error tracking and diagnostics",
-      "Structured workspace layout with sidebar navigation and mobile support",
+      "Server Components architecture with fast initial load",
+      "Integrated Sentry error monitoring and diagnostic reporting",
+      "Modular workspace layout with responsive sidebar navigation",
       "Strict TypeScript definitions for application data flows",
     ],
     githubUrl: "https://github.com/KerelosNasser/saas-app",

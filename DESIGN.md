@@ -1,60 +1,98 @@
-# Design System & Aesthetics: Kero Portfolio (v4)
+# Design Guide: Editorial Developer Studio
 
-## 1. Visual Direction & Mood
-- **Concept**: Premium SaaS Product + Editorial Engineering.
-- **Atmosphere**: Dark, sophisticated, crisp, and restrained. Feels like modern developer infrastructure (Linear, Stripe, Supabase, Vercel).
-- **Core Rule**: Avoid generic tropes:
-  - NO neon cyber hacker greens/magentas.
-  - NO random glassmorphism or muddy blur.
-  - NO giant walls of tech logos.
-  - NO spinning 3D cubes or floating blobs that destroy performance.
-  - NO repetitive, boring card grids.
+This document explains the design direction for Kero's portfolio. It is written plainly so any designer or developer can understand the aesthetic and maintain it without slipping into generic SaaS habits.
 
-## 2. Color Palette & Theming (Tailwind v4 CSS Theme)
-- **Backgrounds**:
-  - Deep Canvas: `hsl(224, 25%, 4%)` (`#07090e`)
-  - Elevated Card: `hsl(224, 20%, 8%)` (`#0f1219`)
-  - Sub-surface / Inset: `hsl(224, 18%, 12%)` (`#181c26`)
-- **Borders & Dividers**:
-  - Subtle Border: `rgba(255, 255, 255, 0.08)`
-  - Active/Hover Border: `rgba(255, 255, 255, 0.18)`
-- **Typography & Foreground**:
-  - Heading / Primary: `hsl(0, 0%, 98%)` (High contrast white)
-  - Body / Secondary: `hsl(220, 14%, 72%)` (Readable slate)
-  - Muted / Metadata: `hsl(220, 12%, 48%)`
-- **Accent / Signal**:
-  - Precision Emerald: `hsl(158, 64%, 52%)` (Indicates active availability, verified build status, live links)
-  - Clean Indigo/Violet: `hsl(245, 82%, 67%)` (Subtle UI highlights, primary CTA focus)
+---
+
+## 1. Creative Direction
+
+The website should feel like:
+> A talented developer showing his work.
+
+It should **not** feel like:
+* An AI-generated SaaS landing page
+* A dark-mode dashboard template (Linear / Stripe clones)
+* A corporate agency portfolio
+
+The concept is **"Editorial Developer Studio"**: personal, technical, confident, and authored. It pairs strong typography and generous whitespace with real, functional project presentations.
+
+---
+
+## 2. Color Palette
+
+The palette is warm, dark, and restrained. Avoid cold blue-gray slate or neon accent greens.
+
+* **Canvas**: `#0C0C0B` (warm near-black)
+* **Subtle Surface**: `#141413`
+* **Elevated Surface**: `#1B1B19`
+* **Primary Text**: `#F1EFE9` (warm off-white)
+* **Secondary Text**: `#A7A39A` (warm stone)
+* **Muted**: `#6F6B63`
+* **Border**: `rgba(241, 239, 233, 0.12)`
+* **Accent**: `#E56A3D` (vermilion / warm orange)
+
+### How to use the accent:
+The accent color (`#E56A3D`) is an editorial punctuation mark. Use it for:
+* Small numerical indicators (`01`, `02`)
+* Very selective highlights (like a wavy underline or focus state)
+* A subtle availability dot
+
+Do not turn buttons, banners, or whole sections orange.
+
+---
 
 ## 3. Typography
-- **Primary Sans**: `Geist Sans` / `Inter` / System Sans fallback.
-- **Monospace Accent**: `Geist Mono` / `JetBrains Mono` (used for metadata, technical tags, status indicators, architecture specs).
-- **Hierarchy Scale**:
-  - Hero Display: `text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight`
-  - Section Titles: `text-2xl sm:text-3xl font-semibold tracking-tight`
-  - Subheads: `text-lg sm:text-xl text-muted-foreground font-normal`
-  - Body: `text-base leading-relaxed text-secondary-foreground`
-  - Microcopy / Badges: `text-xs font-mono uppercase tracking-wider`
 
-## 4. Spacing, Layout & Rhythm
-- **Rhythm**: Generous vertical whitespace (`py-20` to `py-32` between sections) to give content room to breathe.
-- **Max Width**: Standardized container `max-w-6xl mx-auto px-6 sm:px-8`.
-- **Component Anatomy**:
-  - Clean, razor-thin borders (`1px solid var(--border)`).
-  - Subtle corner rounding (`rounded-xl` / `rounded-2xl`).
-  - High information density where technical proof is needed; spacious editorial layout where value is communicated.
+* **Sans-serif (Inter)**: The workhorse font for all body copy, navigation, buttons, and section titles. Clean and highly legible.
+* **Editorial Serif (Newsreader)**: Used sparingly for single phrase accents (such as *"working web products"* in the hero). It adds human authorship without turning the site into a magazine.
+* **Monospace (Geist Mono)**: Reserved strictly for what naturally belongs in monospace: technology tags, code snippets, and tiny section counters. Never use monospace for general marketing copy or normal headings.
 
-## 5. Animation Strategy
-- **Guiding Principle**: Motion must communicate hierarchy and state, never delay interaction.
-- **Allowed Motion**:
-  - Subtle entrance fades and slight y-translation on initial view.
-  - Crisp hover states on buttons and project cards (border luminance change, slight image scale).
-  - Micro-interactions on tabs or copy-to-clipboard buttons.
-- **Accessibility**: Full compliance with `prefers-reduced-motion`. All key content must be immediately readable without animation.
+---
 
-## 6. Mobile-First Responsiveness
-- All components built mobile-first.
-- On small screens:
-  - Eliminate multi-column project cards; present clear vertical flow: Preview Image -> Problem/Solution -> Tech Specs -> Action CTA.
-  - Sticky/accessible contact actions (Direct WhatsApp & Email triggers).
-  - Preserve high contrast and legible body size (minimum 16px body on mobile).
+## 4. Visual Rhythm & Layout
+
+### Avoid the "Everything is a Card" Pattern
+Do not wrap every piece of content in `rounded-xl border bg-card`. That creates a repetitive, robotic look.
+
+Instead, build visual rhythm using:
+* Open typographic layouts
+* Thin horizontal divider rules (`border-white/[0.08]`)
+* Asymmetric two-column grids
+* Generous whitespace (`py-24` to `py-40` between major sections)
+* Varied project presentations
+
+### Selected Work is the Centerpiece
+The work section has the highest visual weight on the page. Each project is treated like a feature article with an alternating layout:
+1. **Project 01**: Text left, real storefront UI right.
+2. **Project 02**: Simulated environmental charts left, text right.
+3. **Project 03**: Full-width application window with text underneath.
+
+---
+
+## 5. Real Project Visuals
+
+Always showcase real UI from Kero's actual repositories and deployments:
+* **AliMart**: Real storefront with product cards, category filtering, and shopping cart.
+* **Environmental Impact Dashboard**: Clean charts and indicators built around simulated data (never claim real-time telemetry).
+* **Next.js SaaS Foundation**: Authentic App Router workspace and monitoring baseline.
+
+Frame these in clean browser chrome with realistic URLs and understated controls.
+
+---
+
+## 6. Voice and Copy
+
+Write like a real person talking to a prospective client:
+* Clear, direct sentences.
+* Non-technical business owners should immediately understand what Kero builds.
+* Banned buzzwords: *high-performance, production-ready, cutting-edge, scalable, innovative solutions, digital experiences, engineering excellence, conversion-oriented, seamless*.
+* State facts simply: what was built, what problem it solves, and where to inspect the code.
+
+---
+
+## 7. Motion
+
+Motion is quiet and physical:
+* Smooth link transitions and subtle border lightening on hover.
+* Small arrow icon translations (`hover:translate-x-0.5`).
+* No continuous looping animations, glowing neon blobs, or jarring parallax.

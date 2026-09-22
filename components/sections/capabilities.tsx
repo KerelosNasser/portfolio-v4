@@ -1,84 +1,67 @@
 import React from "react";
 import { Container } from "@/components/layout/container";
 import { capabilitiesData } from "@/lib/data/services";
-import { Check, Cpu, LayoutDashboard, MonitorSmartphone, Server } from "lucide-react";
 
 export function Capabilities() {
-  const icons = [
-    <Cpu key="0" className="h-5 w-5 text-indigo-400" />,
-    <LayoutDashboard key="1" className="h-5 w-5 text-indigo-400" />,
-    <MonitorSmartphone key="2" className="h-5 w-5 text-indigo-400" />,
-    <Server key="3" className="h-5 w-5 text-indigo-400" />,
-  ];
-
   return (
-    <section id="capabilities" className="py-20 md:py-28 lg:py-32 border-b border-white/[0.08]">
+    <section id="capabilities" className="py-24 md:py-32 lg:py-40 border-b border-white/[0.08]">
       <Container>
         {/* Section Header */}
-        <div className="max-w-2xl space-y-3 mb-12 md:mb-16">
-          <div className="flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-indigo-400" />
-            <p className="font-mono text-xs uppercase tracking-wider text-slate-400">
-              What I Build
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 md:mb-24">
+          <div className="space-y-3 max-w-xl">
+            <p className="text-xs font-mono uppercase tracking-wider text-[#A7A39A]">
+              02 — What I build
             </p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#F1EFE9]">
+              Software built around your workflow.
+            </h2>
           </div>
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Services focused on tangible deliverables.
-          </h2>
-          <p className="text-base text-slate-400 leading-relaxed">
-            I help founders and teams build working software without unnecessary overhead.
-            Here is what I can realistically design, engineer, and deploy for your project.
+          <p className="text-sm text-[#A7A39A] max-w-sm leading-relaxed">
+            I help founders and businesses build working web applications without unnecessary
+            agency overhead or technical confusion.
           </p>
         </div>
 
-        {/* Capabilities Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {capabilitiesData.map((capability, index) => (
+        {/* Editorial Typographic List */}
+        <div className="divide-y divide-white/[0.08] border-y border-white/[0.08]">
+          {capabilitiesData.map((item, index) => (
             <div
-              key={capability.title}
-              className="flex flex-col justify-between rounded-xl border border-white/[0.08] bg-[#0f1219] p-6 sm:p-8 hover:border-white/[0.14] transition-colors"
+              key={item.title}
+              className="py-10 md:py-14 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start"
             >
-              <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/[0.05] border border-white/[0.08]">
-                    {icons[index % icons.length]}
-                  </div>
-                  <span className="font-mono text-xs text-slate-500">0{index + 1}</span>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-bold text-white tracking-tight">
-                    {capability.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-slate-400 leading-relaxed">
-                    {capability.description}
-                  </p>
-                </div>
-
-                <div className="pt-2">
-                  <p className="font-mono text-xs uppercase tracking-wider text-slate-500 mb-2">
-                    Key Deliverables
-                  </p>
-                  <ul className="space-y-2 text-xs text-slate-300">
-                    {capability.deliverables.map((item, i) => (
-                      <li key={i} className="flex items-center gap-2">
-                        <Check className="h-3.5 w-3.5 text-emerald-400 shrink-0" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+              {/* Number and Title (5 cols) */}
+              <div className="lg:col-span-5 space-y-2">
+                <span className="font-mono text-xs text-[#E56A3D]">0{index + 1}</span>
+                <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#F1EFE9]">
+                  {item.title}
+                </h3>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-white/[0.06] flex flex-wrap gap-1.5">
-                {capability.technologies.map((tech) => (
-                  <span
-                    key={tech}
-                    className="rounded bg-white/[0.03] border border-white/[0.06] px-2 py-0.5 font-mono text-[11px] text-slate-400"
-                  >
-                    {tech}
-                  </span>
-                ))}
+              {/* Description & Deliverables (7 cols) */}
+              <div className="lg:col-span-7 space-y-6">
+                <p className="text-base sm:text-lg text-[#A7A39A] leading-relaxed">
+                  {item.description}
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-[#A7A39A]">
+                  {item.deliverables.map((deliv, dIdx) => (
+                    <div key={dIdx} className="flex items-start gap-2">
+                      <span className="text-[#E56A3D] font-bold">—</span>
+                      <span>{deliv}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="pt-2 flex flex-wrap gap-2">
+                  {item.technologies.map((tech) => (
+                    <span
+                      key={tech}
+                      className="font-mono text-[11px] text-[#6F6B63] bg-white/[0.03] px-2 py-0.5 rounded border border-white/5"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}

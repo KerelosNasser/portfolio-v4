@@ -4,50 +4,47 @@ import { processStepsData } from "@/lib/data/services";
 
 export function Process() {
   return (
-    <section id="process" className="py-20 md:py-28 lg:py-32 border-b border-white/[0.08]">
+    <section id="process" className="py-24 md:py-32 lg:py-40 border-b border-white/[0.08]">
       <Container>
         {/* Section Header */}
-        <div className="max-w-2xl space-y-3 mb-12 md:mb-16">
-          <div className="flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-slate-400" />
-            <p className="font-mono text-xs uppercase tracking-wider text-slate-400">
-              Workflow
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 md:mb-24">
+          <div className="space-y-3 max-w-xl">
+            <p className="text-xs font-mono uppercase tracking-wider text-[#A7A39A]">
+              03 — How I work
             </p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#F1EFE9]">
+              Simple, transparent collaboration.
+            </h2>
           </div>
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            A straightforward, iterative process.
-          </h2>
-          <p className="text-base text-slate-400 leading-relaxed">
-            No bloated agency overhead or opaque handoffs. We align on scope, build in testable
+          <p className="text-sm text-[#A7A39A] max-w-sm leading-relaxed">
+            No agency bloat or opaque handoffs. We align on scope, build in testable
             increments, and ship reliable software.
           </p>
         </div>
 
-        {/* 3-Step Process Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {processStepsData.map((step) => (
+        {/* 3-Step Scannable Process Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 divide-y md:divide-y-0 md:divide-x divide-white/[0.08]">
+          {processStepsData.map((step, idx) => (
             <div
               key={step.stepNumber}
-              className="flex flex-col justify-between rounded-xl border border-white/[0.08] bg-[#0f1219] p-6 sm:p-8"
+              className={`space-y-4 ${idx > 0 ? "pt-8 md:pt-0 md:pl-12" : ""}`}
             >
-              <div className="space-y-4">
-                <span className="font-mono text-xs font-semibold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-1 rounded inline-block">
-                  Phase {step.stepNumber}
+              <div className="space-y-2">
+                <span className="font-mono text-xs text-[#E56A3D]">
+                  {step.stepNumber} — {step.title}
                 </span>
-                <h3 className="text-xl font-bold text-white tracking-tight">
+                <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-[#F1EFE9]">
                   {step.title}
                 </h3>
-                <p className="text-sm text-slate-300 leading-relaxed">
-                  {step.description}
-                </p>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-white/[0.06]">
-                <p className="font-mono text-xs uppercase tracking-wider text-slate-500 mb-1">
-                  Deliverable Focus
-                </p>
-                <p className="text-xs text-slate-400 leading-relaxed">
-                  {step.focus}
+              <p className="text-sm sm:text-base text-[#A7A39A] leading-relaxed">
+                {step.description}
+              </p>
+
+              <div className="pt-2">
+                <p className="text-xs font-mono text-[#6F6B63]">
+                  Focus: {step.focus}
                 </p>
               </div>
             </div>

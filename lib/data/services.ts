@@ -2,50 +2,50 @@ import { Capability, ProcessStep } from "@/types";
 
 export const capabilitiesData: Capability[] = [
   {
-    title: "SaaS MVPs & Prototypes",
+    title: "SaaS & MVPs",
     description:
-      "Transforming product concepts into working, deployable MVPs with responsive interfaces, user authentication, and structured databases.",
+      "Products that need authentication, dashboards, workflows, and integrations. From initial concept to a working version people can use.",
     deliverables: [
-      "User authentication & session flows",
-      "Interactive workspace & dashboard layouts",
+      "User authentication & session management",
+      "Dashboard interfaces & interactive workflows",
       "Database schema design & migrations",
       "Deployment to Vercel or cloud hosts",
     ],
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL"],
   },
   {
-    title: "Business Tools & Dashboards",
+    title: "Business tools",
     description:
-      "Building internal operational tools, analytical dashboards, and administrative portals to visualize data and streamline workflows.",
+      "Internal apps, dashboards, and systems that replace manual work or organize company data in one place.",
     deliverables: [
-      "Interactive charts & metric summaries",
+      "Clear charts & metric summaries",
       "Searchable, filterable data tables",
-      "Role-based views and management panels",
-      "Stateful forms and workflow automation",
+      "Management panels & role-based views",
+      "Form handling & workflow automation",
     ],
     technologies: ["React", "TypeScript", "TanStack Query", "Recharts", "Tailwind CSS"],
   },
   {
-    title: "Custom Web Applications",
+    title: "Custom web apps",
     description:
-      "Developing high-performance, mobile-first web applications, client portals, and storefronts tailored to specific business needs.",
+      "Product interfaces built around a specific workflow or business need, designed to work smoothly on mobile and desktop.",
     deliverables: [
-      "Mobile-first, fully responsive layouts",
+      "Mobile-friendly, responsive layouts",
       "Dynamic filtering, search, and catalogs",
-      "Fast page load times & optimized assets",
-      "Accessible, semantic markup standards",
+      "Fast page load times & clean styling",
+      "Accessible, semantic markup",
     ],
     technologies: ["Next.js", "React", "TypeScript", "shadcn/ui", "Tailwind CSS"],
   },
   {
-    title: "REST APIs & Backend Services",
+    title: "APIs & backend",
     description:
-      "Engineering clean, maintainable backend APIs, database models, and service integrations to power web applications.",
+      "Practical APIs and backend services using Next.js or FastAPI to power your application reliably.",
     deliverables: [
-      "RESTful API route handlers & endpoints",
-      "Relational data modeling & queries",
-      "Third-party API & AI integrations",
-      "Error handling, validation & monitoring",
+      "REST API route handlers & endpoints",
+      "Relational data modeling & SQL queries",
+      "External API integrations",
+      "Error handling & logging",
     ],
     technologies: ["Python (FastAPI)", "Next.js Route Handlers", "PostgreSQL", "Prisma"],
   },
@@ -54,23 +54,23 @@ export const capabilitiesData: Capability[] = [
 export const processStepsData: ProcessStep[] = [
   {
     stepNumber: "01",
-    title: "Scope & Architecture",
+    title: "Understand",
     description:
-      "We define the core user problems, scope the essential feature set, establish data structures, and select the simplest effective technical stack.",
-    focus: "Clarity on deliverables, architecture diagram, and project roadmap.",
+      "We talk through what you need, define the essential features, and choose the simplest stack that does the job.",
+    focus: "Clear deliverables, agreed scope, and no guesswork.",
   },
   {
     stepNumber: "02",
-    title: "Build & Iterate",
+    title: "Build",
     description:
-      "I develop the application in testable, iterative increments across frontend, backend, and database. You receive regular progress updates and staging previews.",
-    focus: "Working code, responsive components, and tight feedback loops.",
+      "I build the application in visible, working increments. You get regular updates and previews to test along the way.",
+    focus: "Working software, responsive screens, and fast feedback loops.",
   },
   {
     stepNumber: "03",
-    title: "Polish & Ship",
+    title: "Refine",
     description:
-      "I test across mobile and desktop viewports, audit performance, verify error handling, and deploy the application to your production environment.",
-    focus: "Production deployment, clean handover, and verified responsiveness.",
+      "We test on mobile and desktop, fix edge cases, verify error handling, and deploy to your domain.",
+    focus: "Clean launch, smooth handover, and code you can build on.",
   },
 ];

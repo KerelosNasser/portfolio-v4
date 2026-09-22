@@ -1,105 +1,159 @@
 import React from "react";
 import { Container } from "@/components/layout/container";
-import { profileData } from "@/lib/data/profile";
-import { ArrowDown, ArrowUpRight, CheckCircle2, MessageCircle } from "lucide-react";
+import { ArrowDown, ArrowUpRight, ShoppingBag, Search, ExternalLink } from "lucide-react";
 
 export function Hero() {
-  const coreTech = [
-    "Next.js",
-    "React 19",
-    "TypeScript",
-    "Python",
-    "FastAPI",
-    "PostgreSQL",
-    "Tailwind CSS",
-  ];
-
   return (
-    <section className="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-28 lg:pt-24 lg:pb-32 border-b border-white/[0.08]">
-      {/* Subtle background ambient gradient (restrained, dark) */}
-      <div className="pointer-events-none absolute inset-0 -z-10 flex items-center justify-center">
-        <div className="h-[380px] w-[600px] rounded-full bg-indigo-950/20 blur-[130px]" />
-      </div>
-
+    <section className="pt-16 pb-20 md:pt-24 md:pb-28 lg:pt-32 lg:pb-36 border-b border-white/[0.08]">
       <Container>
-        <div className="max-w-3xl space-y-8">
-          {/* Status Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3.5 py-1.5 text-xs font-medium text-emerald-400">
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
-            </span>
-            <span>{profileData.availability}</span>
-          </div>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          {/* Left Column: Editorial Statement (7 cols) */}
+          <div className="lg:col-span-7 space-y-8">
+            {/* Simple, natural identity */}
+            <p className="text-sm font-medium text-[#A7A39A] tracking-normal">
+              Kero <span className="text-[#6F6B63]">/</span> Full-stack developer
+            </p>
 
-          {/* Headline */}
-          <div className="space-y-4">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl lg:leading-[1.1]">
-              {profileData.headline}
+            {/* Headline with restrained serif emphasis */}
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#F1EFE9] leading-[1.12]">
+              I turn ideas into{" "}
+              <span className="font-serif italic font-normal text-[#F1EFE9] underline decoration-[#E56A3D]/50 decoration-wavy decoration-1 underline-offset-8">
+                working web products.
+              </span>
             </h1>
-            <p className="text-lg leading-relaxed text-slate-300 sm:text-xl max-w-2xl font-normal">
-              Full Stack Developer specializing in turning product concepts into working web
-              applications. I build SaaS MVPs, internal dashboards, business tools, and
-              custom web platforms with clean, maintainable code.
+
+            {/* Supporting sentence in human tone */}
+            <p className="text-base sm:text-lg text-[#A7A39A] leading-relaxed max-w-xl font-normal">
+              Full-stack developer focused on SaaS, business tools, dashboards, and modern
+              web applications. I build the frontend, backend, database, and the parts in between.
+            </p>
+
+            {/* CTAs */}
+            <div className="flex flex-wrap items-center gap-4 pt-2">
+              <a
+                href="#work"
+                className="inline-flex items-center justify-center gap-2 rounded-md bg-[#F1EFE9] px-5 py-2.5 text-sm font-medium text-[#0C0C0B] hover:bg-white transition-colors"
+              >
+                <span>View my work</span>
+                <ArrowDown className="h-4 w-4" />
+              </a>
+
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center gap-1.5 rounded-md border border-white/15 px-5 py-2.5 text-sm font-medium text-[#F1EFE9] hover:bg-white/[0.05] hover:border-white/25 transition-colors"
+              >
+                <span>Let&apos;s talk</span>
+                <ArrowUpRight className="h-4 w-4 text-[#A7A39A]" />
+              </a>
+            </div>
+
+            {/* Simple tech reassurance - no badges */}
+            <p className="text-xs text-[#6F6B63] pt-4 font-mono">
+              Working with Next.js, React, TypeScript, Python, and PostgreSQL.
             </p>
           </div>
 
-          {/* CTAs */}
-          <div className="flex flex-wrap items-center gap-4 pt-2">
-            <a
-              href={profileData.contact.whatsapp.chatUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-slate-200 transition-colors shadow-sm min-h-[44px]"
-            >
-              <MessageCircle className="h-4 w-4 text-emerald-600" />
-              <span>Discuss a Project</span>
-              <ArrowUpRight className="h-4 w-4 text-slate-500" />
-            </a>
-
-            <a
-              href="#work"
-              className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/15 bg-white/[0.04] px-5 py-3 text-sm font-medium text-slate-200 hover:bg-white/[0.08] hover:text-white hover:border-white/25 transition-colors min-h-[44px]"
-            >
-              <span>Explore Selected Work</span>
-              <ArrowDown className="h-4 w-4 text-slate-400" />
-            </a>
-          </div>
-
-          {/* Practical Capabilities Checklist */}
-          <div className="pt-6 border-t border-white/[0.08] grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-300">
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-emerald-400 shrink-0" />
-              <span>Full-stack implementation from UI to database</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-emerald-400 shrink-0" />
-              <span>Responsive, mobile-first web interfaces</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-emerald-400 shrink-0" />
-              <span>Direct communication & iterative delivery</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-emerald-400 shrink-0" />
-              <span>Clean code with strict TypeScript types</span>
-            </div>
-          </div>
-
-          {/* Verified Tech Stack Chips */}
-          <div className="space-y-2 pt-2">
-            <p className="font-mono text-xs uppercase tracking-wider text-slate-500">
-              Primary Stack
-            </p>
-            <div className="flex flex-wrap gap-2">
-              {coreTech.map((tech) => (
-                <span
-                  key={tech}
-                  className="rounded border border-white/[0.08] bg-white/[0.03] px-2.5 py-1 font-mono text-xs text-slate-300"
+          {/* Right Column: Real Project Visual Preview (5 cols) */}
+          <div className="lg:col-span-5">
+            <div className="relative rounded-lg border border-white/15 bg-[#141413] shadow-2xl overflow-hidden transition-all duration-300 hover:border-white/25">
+              {/* Browser Chrome */}
+              <div className="flex items-center justify-between px-3.5 py-2.5 border-b border-white/10 bg-[#1B1B19]/70 text-xs text-[#A7A39A]">
+                <div className="flex items-center gap-1.5">
+                  <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
+                </div>
+                <div className="flex items-center gap-1 text-[11px] font-mono text-[#6F6B63] bg-black/30 px-2 py-0.5 rounded border border-white/5">
+                  <span>advanced-e-commerce.vercel.app</span>
+                </div>
+                <a
+                  href="https://advanced-e-commerce.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#F1EFE9] transition-colors"
+                  aria-label="View live AliMart site"
                 >
-                  {tech}
-                </span>
-              ))}
+                  <ExternalLink className="h-3 w-3" />
+                </a>
+              </div>
+
+              {/* Realistic Storefront Preview UI */}
+              <div className="p-4 space-y-3.5 bg-[#0C0C0B]/90 text-left">
+                {/* Store Header bar */}
+                <div className="flex items-center justify-between border-b border-white/10 pb-3">
+                  <div className="flex items-center gap-2">
+                    <span className="flex h-6 w-6 items-center justify-center rounded bg-[#E56A3D]/20 text-[#E56A3D] font-bold text-xs">
+                      A
+                    </span>
+                    <span className="font-semibold text-xs text-[#F1EFE9]">AliMart</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-[#A7A39A] text-xs">
+                    <div className="flex items-center gap-1 bg-white/[0.04] px-2 py-1 rounded text-[11px]">
+                      <Search className="h-3 w-3 text-[#6F6B63]" />
+                      <span className="text-[#6F6B63]">Search...</span>
+                    </div>
+                    <div className="flex items-center gap-1 text-[11px] text-[#E56A3D]">
+                      <ShoppingBag className="h-3.5 w-3.5" />
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Categories */}
+                <div className="flex items-center gap-1.5 overflow-hidden text-[11px]">
+                  <span className="rounded bg-[#E56A3D] text-[#0C0C0B] px-2 py-0.5 font-medium">
+                    All Products
+                  </span>
+                  <span className="rounded bg-white/[0.05] text-[#A7A39A] px-2 py-0.5">
+                    Electronics
+                  </span>
+                  <span className="rounded bg-white/[0.05] text-[#A7A39A] px-2 py-0.5">
+                    Home & Desk
+                  </span>
+                  <span className="rounded bg-white/[0.05] text-[#A7A39A] px-2 py-0.5">
+                    Audio
+                  </span>
+                </div>
+
+                {/* Product Grid Preview */}
+                <div className="grid grid-cols-2 gap-2.5 pt-1">
+                  <div className="rounded border border-white/10 bg-[#141413] p-2.5 space-y-2">
+                    <div className="h-20 rounded bg-white/[0.03] flex items-center justify-center text-xs text-[#6F6B63]">
+                      Product Image
+                    </div>
+                    <div className="space-y-1">
+                      <p className="text-xs font-medium text-[#F1EFE9] truncate">
+                        Minimal Desk Lamp
+                      </p>
+                      <div className="flex items-center justify-between text-[11px]">
+                        <span className="font-mono text-[#A7A39A]">$48.00</span>
+                        <span className="text-[#E56A3D] font-medium">+ Add</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="rounded border border-white/10 bg-[#141413] p-2.5 space-y-2">
+                    <div className="h-20 rounded bg-white/[0.03] flex items-center justify-center text-xs text-[#6F6B63]">
+                      Product Image
+                    </div>
+                    <div className="space-y-1">
+                      <p className="text-xs font-medium text-[#F1EFE9] truncate">
+                        Wireless Headphones
+                      </p>
+                      <div className="flex items-center justify-between text-[11px]">
+                        <span className="font-mono text-[#A7A39A]">$129.00</span>
+                        <span className="text-[#E56A3D] font-medium">+ Add</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Real project attribution caption */}
+                <div className="pt-2 border-t border-white/5 flex items-center justify-between text-[11px] text-[#6F6B63]">
+                  <span>Live Project: AliMart Storefront</span>
+                  <span className="font-mono">React 19 • Vite • Cart State</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
