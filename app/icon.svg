@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
+  <!-- Dark canvas container with subtle border -->
+  <rect width="32" height="32" rx="7" fill="#111412" />
+  <rect x="0.75" y="0.75" width="30.5" height="30.5" rx="6.25" stroke="#27302B" stroke-width="1.5" />
+
+  <!-- Monogram K: High contrast for small tab sizes -->
+  <!-- Vertical Stem (Crisp White) -->
+  <rect x="6.5" y="6" width="4.5" height="20" rx="1.5" fill="#FFFFFF" />
+
+  <!-- Upper Arm (Brand Green) -->
+  <path d="M12 16.5L20.8 7.2C21.4 6.6 22.3 6.3 23.2 6.3H24.2C25 6.3 25.5 7.1 25 7.7L16.2 17L12 16.5Z" fill="#00A86B" />
+
+  <!-- Lower Arm (Brand Green) -->
+  <path d="M13.8 15.5L23 25.4C23.6 26 24.5 26.3 25.4 26.3H25.7C26.4 26.3 26.9 25.5 26.3 24.9L16.2 14.5L13.8 15.5Z" fill="#00A86B" />
+
+  <!-- Center Core -->
+  <circle cx="13.5" cy="16" r="2.25" fill="#00A86B" />
+</svg>

@@ -60,6 +60,13 @@ export const metadata: Metadata = {
     description:
       "I build modern web products from concept to deployment. Available for freelance projects worldwide.",
   },
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "32x32" },
+    ],
+    apple: [{ url: "/icon.svg" }],
+  },
   robots: {
     index: true,
     follow: true,
