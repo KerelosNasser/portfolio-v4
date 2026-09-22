@@ -7,11 +7,11 @@ export const projectsData: Project[] = [
     tagline: "A modern retail storefront with instant filtering, product search, and a persistent shopping cart.",
     category: "E-Commerce / Web App",
     problem:
-      "Online retail storefronts often feel sluggish when filtering products or browsing categories with repeated page reloads.",
+      "Online retail storefronts often feel sluggish when filtering products or browsing categories with repeated full-page reloads.",
     solution:
-      "Built an instant-filtering retail storefront using React 19 and Vite. Shoppers can search, filter by multiple categories, inspect product details in modals, and manage cart items smoothly without page refreshes.",
-    architecture:
-      "Component-driven React 19 architecture with Vite for minimal latency, TypeScript for product schema safety, and Tailwind CSS with shadcn/ui for accessible styling.",
+      "Built a fast-filtering retail storefront using React 19 and Vite. Shoppers can search, filter across categories, view product details in modal views, and manage cart items smoothly without page refreshes.",
+    outcome:
+      "Provides instantaneous client-side category filtering, real-time product search, and persistent session cart management.",
     technologies: ["React 19", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui"],
     features: [
       "Instant multi-category filtering and real-time product search",
@@ -32,8 +32,8 @@ export const projectsData: Project[] = [
       "Complex environmental datasets can be hard to interpret without clear visual hierarchy, readable charts, and intuitive metric indicators.",
     solution:
       "Designed an interactive data visualization dashboard that maps simulated climate metrics—such as temperature variations and emissions—into readable, responsive charts and summary indicators.",
-    architecture:
-      "Built with React 19, Vite, TanStack Query for asynchronous state handling, Recharts for responsive SVG visualizations, and Tailwind CSS for grid layout.",
+    outcome:
+      "Synthesizes simulated climate indicators into responsive SVG charts and scannable metric cards with clear simulated data labeling.",
     technologies: [
       "React 19",
       "TypeScript",
@@ -61,8 +61,8 @@ export const projectsData: Project[] = [
       "Starting a new web app often means rebuilding the same foundation: layout structures, error monitoring, server component boundaries, and type definitions.",
     solution:
       "Created a clean baseline using Next.js App Router, complete with responsive workspace navigation, Sentry error monitoring, and modular layout architecture ready for custom features.",
-    architecture:
-      "Built with Next.js App Router using React Server Components, Sentry error tracking, TypeScript schemas, and utility-first Tailwind CSS.",
+    outcome:
+      "Provides a pre-configured App Router workspace with server component boundaries, integrated error diagnostics, and strict typing.",
     technologies: ["Next.js (App Router)", "TypeScript", "Tailwind CSS", "Sentry"],
     features: [
       "Server Components architecture with fast initial load",

@@ -3,8 +3,8 @@
 ## 1. Profile & Identity
 - **Full Name**: Kerolos Nasser
 - **Preferred Name**: Kero
-- **Role**: Junior / Strong-Junior Full Stack Developer
-- **Location**: Egypt
+- **Role**: Independent Full-Stack Developer
+- **Location**: Alexandria, Egypt
 - **Education**: Alexandria University, Management Information Systems (MIS)
 - **Certifications**: Meta Frontend Developer Professional Certificate
 - **Contact & Socials**:
@@ -16,13 +16,13 @@
 ## 2. Core Objective & Positioning
 - **Primary Objective**: Turn visitors into freelance leads.
 - **Availability Status**: "Available for freelance projects" or "Open to new projects".
-- **Value Proposition**: "Kero takes product ideas and turns them into real, working web applications from frontend to backend and deployment."
+- **Value Proposition**: "Independent full-stack developer focused on SaaS products, business tools, dashboards, custom web applications, and backend systems. I build functional software from concept to deployment."
 - **Target Audience**: Founders, business owners, and product teams needing:
   - SaaS MVPs & Prototypes
   - Business Web Applications & Portals
   - Dashboards & Internal Analytics Tools
-  - AI-Integrated Web Applications
-  - Custom Responsive Web Platforms
+  - Custom Web Applications
+  - APIs & Backend Systems
 - **Positioning Stance**:
   - Confident, practical, technically credible, and honest.
   - NOT an enterprise architect, NOT an agency, NOT a cheap template coder.

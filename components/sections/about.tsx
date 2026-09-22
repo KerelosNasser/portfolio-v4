@@ -9,7 +9,7 @@ export function About() {
         {/* Section Header */}
         <div className="space-y-3 max-w-xl mb-16 md:mb-24">
           <p className="text-xs font-mono uppercase tracking-wider text-muted-foreground">
-            04 — A little about me
+            04 — About
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
             Practical thinking, clear code.
@@ -21,21 +21,23 @@ export function About() {
           {/* Left Column: Narrative (7 cols) */}
           <div className="lg:col-span-7 space-y-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
             <p>
-              I&apos;m Kero, a full-stack developer based in Alexandria, Egypt.
+              I&apos;m Kero, an independent full-stack developer based in Alexandria, Egypt.
             </p>
             <p>
               I study Management Information Systems (MIS) at Alexandria University, which gives me
-              a useful blend of business understanding and technical execution. Before writing
-              code, I look closely at data structures, user workflows, and practical business needs.
+              a practical foundation in business processes alongside technical development. When
+              approaching a project, I look first at the user workflow and data structure before
+              choosing tools.
             </p>
             <p>
-              Most of my time is spent building with Next.js, React, TypeScript, Python, and
-              PostgreSQL. I care about writing maintainable code with clear boundaries, so that when a
-              project grows, it remains fast, stable, and easy to build on.
+              I work primarily with Next.js, React, TypeScript, Python, and PostgreSQL. My focus is
+              on building clean, maintainable web applications with clear boundaries, so your software
+              remains reliable, fast, and easy to extend as your product evolves.
             </p>
             <p>
-              I prioritize practical architecture and clear interfaces over unnecessary complexity.
-              Every project in my portfolio is backed by public source code on GitHub.
+              I value practical architecture and clear interfaces over unnecessary complexity. Every
+              project in my portfolio is backed by public source code on GitHub, so you can inspect
+              how I build and structure software firsthand.
             </p>
           </div>
 
@@ -70,8 +72,8 @@ export function About() {
                 Core Approach
               </span>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Practical architecture, clean component boundaries, strict types, and direct
-                communication.
+                Practical architecture, clean component boundaries, strict types, and direct,
+                honest communication.
               </p>
             </div>
 

@@ -62,13 +62,20 @@ export function SelectedWork() {
                 </p>
               </div>
 
+              {/* What it solves & What was built */}
               <div className="space-y-3 text-xs sm:text-sm text-muted-foreground leading-relaxed">
                 <p>
-                  Shoppers get frustrated when filtering products requires waiting for page
-                  refreshes. AliMart solves this with instant client-side category filtering,
-                  live search, and a persistent shopping cart.
+                  <strong className="text-foreground font-medium">What it solves:</strong> Online
+                  retail storefronts often feel sluggish when filtering products or browsing
+                  categories with repeated full-page reloads.
                 </p>
-                <ul className="space-y-2 pt-1">
+                <p>
+                  <strong className="text-foreground font-medium">What was built:</strong> An
+                  instant-filtering retail storefront using React 19 and Vite. Shoppers can search,
+                  filter by multiple categories, inspect product details in modals, and manage cart
+                  items smoothly without page refreshes.
+                </p>
+                <ul className="space-y-1.5 pt-1">
                   <li className="flex items-start gap-2">
                     <span className="text-[#00A86B] dark:text-[#20C67A] font-bold">—</span>
                     <span>Instant category filtering without full-page reloads</span>
@@ -84,7 +91,7 @@ export function SelectedWork() {
                 </ul>
               </div>
 
-              {/* Technologies (Quiet secondary metadata) */}
+              {/* Relevant Technology (Supporting evidence) */}
               <div className="flex flex-wrap items-center gap-2 pt-1">
                 {p1.technologies.map((t) => (
                   <span
@@ -96,13 +103,13 @@ export function SelectedWork() {
                 ))}
               </div>
 
-              <div className="flex items-center gap-4 pt-2">
+              <div className="flex items-center gap-3 pt-2">
                 {p1.liveUrl && (
                   <a
                     href={p1.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 rounded-md bg-[#00A86B] hover:bg-[#087A52] dark:bg-[#20C67A] dark:hover:bg-[#0A8F61] px-4 py-2 text-xs font-semibold text-white dark:text-[#0D110F] shadow-sm transition-colors"
+                    className="inline-flex items-center gap-1.5 rounded-md bg-[#00A86B] hover:bg-[#087A52] dark:bg-[#20C67A] dark:hover:bg-[#0A8F61] px-4 py-2.5 text-xs font-semibold text-white dark:text-[#0D110F] shadow-sm transition-colors"
                   >
                     <span>Visit live store</span>
                     <ExternalLink className="h-3.5 w-3.5" />
@@ -112,18 +119,18 @@ export function SelectedWork() {
                   href={p1.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors font-medium"
+                  className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-4 py-2.5 text-xs text-foreground hover:bg-secondary transition-colors font-medium"
                 >
                   <GithubIcon className="h-3.5 w-3.5" />
                   <span>View GitHub</span>
-                  <ArrowUpRight className="h-3 w-3" />
+                  <ArrowUpRight className="h-3 w-3 text-muted-foreground" />
                 </a>
               </div>
             </div>
 
-            {/* Visual Column (7 cols): Realistic Storefront UI */}
+            {/* Visual Column (7 cols): Large, Polished Storefront UI */}
             <div className="lg:col-span-7">
-              <div className="rounded-lg border border-border bg-card shadow-md overflow-hidden group">
+              <div className="rounded-lg border border-border bg-card shadow-md overflow-hidden transition-all duration-300 hover:border-[#00A86B]/30 dark:hover:border-[#20C67A]/30">
                 {/* Browser chrome */}
                 <div className="flex items-center justify-between px-3.5 py-2.5 border-b border-border bg-secondary/70 text-xs text-muted-foreground">
                   <div className="flex items-center gap-1.5">
@@ -135,7 +142,7 @@ export function SelectedWork() {
                     <span>advanced-e-commerce.vercel.app</span>
                   </div>
                   <span className="text-[11px] font-mono font-medium text-[#00A86B] dark:text-[#20C67A]">
-                    Live
+                    ● Live Store
                   </span>
                 </div>
 
@@ -147,7 +154,7 @@ export function SelectedWork() {
                       <span className="flex h-6 w-6 items-center justify-center rounded bg-[#00A86B] text-white dark:bg-[#20C67A] dark:text-[#0D110F] font-bold text-xs">
                         A
                       </span>
-                      <span className="font-semibold text-sm text-foreground">AliMart</span>
+                      <span className="font-semibold text-sm text-foreground">AliMart Store</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <div className="hidden sm:flex items-center gap-1.5 bg-secondary px-2.5 py-1 rounded text-xs text-muted-foreground border border-border">
@@ -166,13 +173,13 @@ export function SelectedWork() {
                     <span className="rounded bg-[#00A86B] text-white dark:bg-[#20C67A] dark:text-[#0D110F] px-2.5 py-1 font-medium">
                       All Items
                     </span>
-                    <span className="rounded bg-secondary text-muted-foreground px-2.5 py-1 hover:text-foreground cursor-pointer">
+                    <span className="rounded bg-secondary text-muted-foreground px-2.5 py-1 hover:text-foreground">
                       Electronics
                     </span>
-                    <span className="rounded bg-secondary text-muted-foreground px-2.5 py-1 hover:text-foreground cursor-pointer">
-                      Home & Workspace
+                    <span className="rounded bg-secondary text-muted-foreground px-2.5 py-1 hover:text-foreground">
+                      Workspace
                     </span>
-                    <span className="rounded bg-secondary text-muted-foreground px-2.5 py-1 hover:text-foreground cursor-pointer">
+                    <span className="rounded bg-secondary text-muted-foreground px-2.5 py-1 hover:text-foreground">
                       Audio
                     </span>
                   </div>
@@ -180,40 +187,43 @@ export function SelectedWork() {
                   {/* Product Grid */}
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
                     <div className="rounded border border-border bg-background p-3 space-y-2">
-                      <div className="h-24 rounded bg-secondary flex items-center justify-center text-xs text-muted-foreground">
-                        Minimal Desk Lamp
+                      <div className="h-24 rounded bg-secondary/80 flex flex-col items-center justify-center text-xs text-muted-foreground p-2 text-center">
+                        <span className="font-mono text-[10px] text-[#00A86B] dark:text-[#20C67A]">IN STOCK</span>
+                        <span className="font-medium text-foreground text-xs pt-0.5">Desk Lamp</span>
                       </div>
                       <div className="space-y-1">
-                        <p className="text-xs font-medium text-foreground">Desk Lamp</p>
+                        <p className="text-xs font-medium text-foreground truncate">Minimal LED Lamp</p>
                         <div className="flex items-center justify-between text-[11px]">
                           <span className="font-mono text-muted-foreground">$48.00</span>
-                          <span className="text-[#00A86B] dark:text-[#20C67A] font-semibold">+ Cart</span>
+                          <span className="text-[#00A86B] dark:text-[#20C67A] font-semibold text-[10px]">+ Cart</span>
                         </div>
                       </div>
                     </div>
 
                     <div className="rounded border border-border bg-background p-3 space-y-2">
-                      <div className="h-24 rounded bg-secondary flex items-center justify-center text-xs text-muted-foreground">
-                        Studio Headphones
+                      <div className="h-24 rounded bg-secondary/80 flex flex-col items-center justify-center text-xs text-muted-foreground p-2 text-center">
+                        <span className="font-mono text-[10px] text-[#00A86B] dark:text-[#20C67A]">IN STOCK</span>
+                        <span className="font-medium text-foreground text-xs pt-0.5">Studio Audio</span>
                       </div>
                       <div className="space-y-1">
-                        <p className="text-xs font-medium text-foreground">Headphones</p>
+                        <p className="text-xs font-medium text-foreground truncate">Studio Headphones</p>
                         <div className="flex items-center justify-between text-[11px]">
                           <span className="font-mono text-muted-foreground">$129.00</span>
-                          <span className="text-[#00A86B] dark:text-[#20C67A] font-semibold">+ Cart</span>
+                          <span className="text-[#00A86B] dark:text-[#20C67A] font-semibold text-[10px]">+ Cart</span>
                         </div>
                       </div>
                     </div>
 
                     <div className="rounded border border-border bg-background p-3 space-y-2">
-                      <div className="h-24 rounded bg-secondary flex items-center justify-center text-xs text-muted-foreground">
-                        Mechanical Board
+                      <div className="h-24 rounded bg-secondary/80 flex flex-col items-center justify-center text-xs text-muted-foreground p-2 text-center">
+                        <span className="font-mono text-[10px] text-[#00A86B] dark:text-[#20C67A]">IN STOCK</span>
+                        <span className="font-medium text-foreground text-xs pt-0.5">Keyboards</span>
                       </div>
                       <div className="space-y-1">
-                        <p className="text-xs font-medium text-foreground">Keyboard</p>
+                        <p className="text-xs font-medium text-foreground truncate">Mechanical Board</p>
                         <div className="flex items-center justify-between text-[11px]">
                           <span className="font-mono text-muted-foreground">$89.00</span>
-                          <span className="text-[#00A86B] dark:text-[#20C67A] font-semibold">+ Cart</span>
+                          <span className="text-[#00A86B] dark:text-[#20C67A] font-semibold text-[10px]">+ Cart</span>
                         </div>
                       </div>
                     </div>
@@ -229,7 +239,7 @@ export function SelectedWork() {
           <article className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Visual Column (7 cols): Simulated Environmental Charts */}
             <div className="lg:col-span-7 order-2 lg:order-1">
-              <div className="rounded-lg border border-border bg-card shadow-md overflow-hidden">
+              <div className="rounded-lg border border-border bg-card shadow-md overflow-hidden transition-all duration-300 hover:border-[#00A86B]/30 dark:hover:border-[#20C67A]/30">
                 {/* Browser chrome */}
                 <div className="flex items-center justify-between px-3.5 py-2.5 border-b border-border bg-secondary/70 text-xs text-muted-foreground">
                   <div className="flex items-center gap-1.5">
@@ -240,29 +250,31 @@ export function SelectedWork() {
                   <div className="flex items-center gap-1 text-[11px] font-mono text-muted-foreground bg-background px-2.5 py-0.5 rounded border border-border">
                     <span>environmental-dashboard (simulated data)</span>
                   </div>
-                  <span className="text-[11px] font-mono text-muted-foreground">React 19</span>
+                  <span className="text-[11px] font-mono text-muted-foreground">
+                    React 19
+                  </span>
                 </div>
 
                 {/* Dashboard UI */}
                 <div className="p-5 space-y-4 bg-card">
-                  {/* Metric Cards Row */}
+                  {/* Metric Cards Row with clear Simulated Data indicator */}
                   <div className="grid grid-cols-3 gap-2.5">
                     <div className="rounded border border-border bg-background p-3 space-y-1">
                       <p className="text-[11px] text-muted-foreground">Avg Temp Anomaly</p>
                       <p className="text-lg font-bold font-mono text-[#00A86B] dark:text-[#20C67A]">+1.24°C</p>
-                      <p className="text-[10px] text-muted-foreground">Simulated climate trend</p>
+                      <p className="text-[10px] text-muted-foreground">Simulated climate model</p>
                     </div>
 
                     <div className="rounded border border-border bg-background p-3 space-y-1">
                       <p className="text-[11px] text-muted-foreground">Clean Energy Share</p>
                       <p className="text-lg font-bold font-mono text-foreground">28.6%</p>
-                      <p className="text-[10px] text-muted-foreground">+3.2% vs baseline</p>
+                      <p className="text-[10px] text-muted-foreground">Simulated regional mix</p>
                     </div>
 
                     <div className="rounded border border-border bg-background p-3 space-y-1">
-                      <p className="text-[11px] text-muted-foreground">Simulated Index</p>
+                      <p className="text-[11px] text-muted-foreground">Atmospheric Index</p>
                       <p className="text-lg font-bold font-mono text-foreground">418 ppm</p>
-                      <p className="text-[10px] text-muted-foreground">Atmospheric model</p>
+                      <p className="text-[10px] text-muted-foreground">Simulated sensor baseline</p>
                     </div>
                   </div>
 
@@ -270,12 +282,12 @@ export function SelectedWork() {
                   <div className="rounded border border-border bg-background p-4 space-y-2">
                     <div className="flex items-center justify-between text-xs">
                       <span className="font-medium text-foreground">
-                        Global Temperature Anomaly Timeline
+                        Temperature Anomaly Timeline (Simulated)
                       </span>
                       <div className="flex items-center gap-3 text-[11px] text-muted-foreground">
                         <span className="flex items-center gap-1">
                           <span className="h-1.5 w-1.5 rounded-full bg-[#00A86B] dark:bg-[#20C67A]" />
-                          Simulated Trend
+                          Model Trend
                         </span>
                         <span className="flex items-center gap-1">
                           <span className="h-1.5 w-1.5 rounded-full bg-border" />
@@ -330,7 +342,7 @@ export function SelectedWork() {
                       <span>1980</span>
                       <span>1995</span>
                       <span>2010</span>
-                      <span>2025 (Projected)</span>
+                      <span>2025 (Projected Model)</span>
                     </div>
                   </div>
                 </div>
@@ -347,17 +359,23 @@ export function SelectedWork() {
                   {p2.title}
                 </h3>
                 <p className="text-sm sm:text-base text-muted-foreground leading-relaxed font-normal">
-                  Interactive data visualization using simulated environmental metrics.
+                  {p2.tagline}
                 </p>
               </div>
 
+              {/* What it solves & What was built */}
               <div className="space-y-3 text-xs sm:text-sm text-muted-foreground leading-relaxed">
                 <p>
-                  Complex datasets can be hard to interpret without clean visual structure.
-                  This dashboard organizes simulated climate metrics into intuitive time-series
-                  charts and key summary cards.
+                  <strong className="text-foreground font-medium">What it solves:</strong> Complex
+                  environmental datasets can be hard to interpret without clear visual structure,
+                  readable charts, and intuitive metric indicators.
                 </p>
-                <ul className="space-y-2 pt-1">
+                <p>
+                  <strong className="text-foreground font-medium">What was built:</strong> An
+                  interactive data visualization dashboard that maps simulated climate metrics—such as
+                  temperature variations and emissions—into readable, responsive charts and summary indicators.
+                </p>
+                <ul className="space-y-1.5 pt-1">
                   <li className="flex items-start gap-2">
                     <span className="text-[#00A86B] dark:text-[#20C67A] font-bold">—</span>
                     <span>Interactive time-series charts for temperature and emission trends</span>
@@ -373,6 +391,7 @@ export function SelectedWork() {
                 </ul>
               </div>
 
+              {/* Relevant Technology */}
               <div className="flex flex-wrap items-center gap-2 pt-1">
                 {p2.technologies.map((t) => (
                   <span
@@ -389,7 +408,7 @@ export function SelectedWork() {
                   href={p2.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-4 py-2 text-xs font-medium text-foreground hover:bg-secondary transition-colors"
+                  className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-4 py-2.5 text-xs font-medium text-foreground hover:bg-secondary transition-colors"
                 >
                   <GithubIcon className="h-3.5 w-3.5" />
                   <span>View GitHub</span>
@@ -404,7 +423,7 @@ export function SelectedWork() {
           {/* ============================================================ */}
           <article className="space-y-8">
             {/* Full Width Visual: App Architecture & Workspace Window */}
-            <div className="rounded-lg border border-border bg-card shadow-md overflow-hidden">
+            <div className="rounded-lg border border-border bg-card shadow-md overflow-hidden transition-all duration-300 hover:border-[#00A86B]/30 dark:hover:border-[#20C67A]/30">
               {/* Browser chrome */}
               <div className="flex items-center justify-between px-3.5 py-2.5 border-b border-border bg-secondary/70 text-xs text-muted-foreground">
                 <div className="flex items-center gap-1.5">
@@ -446,7 +465,7 @@ export function SelectedWork() {
 
                   <div className="pt-6 border-t border-border text-[11px] text-muted-foreground space-y-1">
                     <p className="font-mono">Sentry: Active</p>
-                    <p className="font-mono">Next.js 15+ / RSC</p>
+                    <p className="font-mono">Next.js App Router</p>
                   </div>
                 </div>
 
@@ -475,13 +494,13 @@ export function SelectedWork() {
                     <div className="rounded border border-border bg-background p-3 space-y-1">
                       <p className="text-[11px] text-muted-foreground">Monitoring</p>
                       <p className="text-sm font-semibold text-[#00A86B] dark:text-[#20C67A]">Sentry Integrated</p>
-                      <p className="text-[10px] text-muted-foreground">Automated error logging</p>
+                      <p className="text-[10px] text-muted-foreground">Automated error diagnostics</p>
                     </div>
 
                     <div className="rounded border border-border bg-background p-3 space-y-1">
                       <p className="text-[11px] text-muted-foreground">Data Safety</p>
                       <p className="text-sm font-semibold text-foreground">Strict TypeScript</p>
-                      <p className="text-[10px] text-muted-foreground">Typed data flows</p>
+                      <p className="text-[10px] text-muted-foreground">Typed application schemas</p>
                     </div>
                   </div>
                 </div>
@@ -500,12 +519,18 @@ export function SelectedWork() {
                 <p className="text-sm sm:text-base text-muted-foreground leading-relaxed font-normal">
                   {p3.tagline}
                 </p>
-                <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed pt-1">
-                  Starting a SaaS project usually involves repeating the same setup: layout
-                  structures, error monitoring, server component boundaries, and type
-                  definitions. This foundation provides a clean baseline ready for building
-                  business features.
-                </p>
+                <div className="space-y-2 text-xs sm:text-sm text-muted-foreground leading-relaxed pt-1">
+                  <p>
+                    <strong className="text-foreground font-medium">What it solves:</strong> Starting
+                    a new web app often means rebuilding the same foundation: layout structures, error
+                    monitoring, server component boundaries, and type definitions.
+                  </p>
+                  <p>
+                    <strong className="text-foreground font-medium">What was built:</strong> A clean
+                    baseline using Next.js App Router with responsive workspace navigation, Sentry
+                    error monitoring, and modular layout architecture ready for custom features.
+                  </p>
+                </div>
               </div>
 
               <div className="lg:col-span-5 space-y-4 lg:pt-8">
@@ -525,7 +550,7 @@ export function SelectedWork() {
                     href={p3.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-4 py-2 text-xs font-medium text-foreground hover:bg-secondary transition-colors"
+                    className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-4 py-2.5 text-xs font-medium text-foreground hover:bg-secondary transition-colors"
                   >
                     <GithubIcon className="h-3.5 w-3.5" />
                     <span>View GitHub Repository</span>

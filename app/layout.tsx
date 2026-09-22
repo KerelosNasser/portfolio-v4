@@ -24,17 +24,21 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Kero | Full Stack Developer — Freelance Web & SaaS Development",
+  title: "Kero | Independent Full-Stack Developer — SaaS, Web Apps & Business Tools",
   description:
-    "Kerolos Nasser (Kero) is a Full Stack Developer building modern SaaS applications, dashboards, internal business tools, and custom web platforms from idea to production.",
+    "Kerolos Nasser (Kero) is an Independent Full-Stack Developer building modern SaaS applications, dashboards, internal business tools, and custom web platforms from concept to deployment.",
   keywords: [
     "Full Stack Developer",
+    "Independent Developer",
     "Freelance Developer",
     "Next.js Developer",
     "React Developer",
     "TypeScript",
+    "Python",
     "FastAPI",
+    "PostgreSQL",
     "SaaS MVP",
+    "Business Tools",
     "Web Application Developer",
     "Kerolos Nasser",
     "Kero",
@@ -45,16 +49,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://portfolio-v4.vercel.app",
-    title: "Kero | Full Stack Developer — Freelance Web & SaaS Development",
+    title: "Kero | Independent Full-Stack Developer — SaaS, Web Apps & Business Tools",
     description:
-      "I turn product concepts into functional, responsive web applications. SaaS MVPs, dashboards, business tools, and custom web platforms.",
+      "I turn ideas into working web products. Specializing in SaaS products, business tools, dashboards, custom web applications, and backend systems.",
     siteName: "Kero Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kero | Full Stack Developer — Freelance Web & SaaS Development",
+    title: "Kero | Independent Full-Stack Developer — SaaS, Web Apps & Business Tools",
     description:
-      "I build modern web products from idea to production. Available for freelance projects.",
+      "I build modern web products from concept to deployment. Available for freelance projects worldwide.",
   },
   robots: {
     index: true,
@@ -88,6 +92,7 @@ export default function RootLayout({
       "PostgreSQL",
       "SaaS Development",
       "Full Stack Development",
+      "Business Tools",
     ],
   };
 

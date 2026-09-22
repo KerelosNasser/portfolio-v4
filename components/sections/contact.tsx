@@ -34,36 +34,36 @@ export function Contact() {
               05 — Contact
             </p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
-              Let&apos;s talk.
+              Have a project in mind?
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed pt-2">
-              Have an idea for a web app, dashboard, or business tool? Reach out directly.
-              No sales reps or complicated forms—just a conversation about what you need and how
-              we can build it.
+              Tell me what you&apos;re trying to build, improve, or automate. No sales reps,
+              intermediaries, or lengthy forms—just a direct conversation about your product
+              requirements.
             </p>
           </div>
 
           {/* Direct Action Channels */}
-          <div className="flex flex-wrap items-center gap-3 pt-2">
-            {/* WhatsApp Trigger - Primary Green */}
+          <div className="flex flex-wrap items-center gap-3.5 pt-2">
+            {/* Primary Action: Start a conversation via WhatsApp */}
             <a
               href={profileData.contact.whatsapp.chatUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-md bg-[#00A86B] hover:bg-[#087A52] dark:bg-[#20C67A] dark:hover:bg-[#0A8F61] px-5 py-3 text-sm font-semibold text-white dark:text-[#0D110F] shadow-sm transition-colors"
+              className="inline-flex items-center justify-center gap-2 rounded-md bg-[#00A86B] hover:bg-[#087A52] dark:bg-[#20C67A] dark:hover:bg-[#0A8F61] px-6 py-3.5 text-sm font-semibold text-white dark:text-[#0D110F] shadow-sm transition-all hover:translate-y-[-1px]"
             >
               <MessageCircle className="h-4 w-4" />
-              <span>WhatsApp</span>
-              <ArrowUpRight className="h-3.5 w-3.5" />
+              <span>Start a conversation</span>
+              <ArrowUpRight className="h-4 w-4" />
             </a>
 
-            {/* Direct Mailto */}
+            {/* Direct Email Link */}
             <a
               href={`mailto:${profileData.contact.email}`}
-              className="inline-flex items-center justify-center gap-2 rounded-md border border-border bg-card px-5 py-3 text-sm font-medium text-foreground hover:bg-secondary transition-colors"
+              className="inline-flex items-center justify-center gap-2 rounded-md border border-border bg-card px-5 py-3.5 text-sm font-medium text-foreground hover:bg-secondary transition-colors"
             >
               <Mail className="h-4 w-4 text-muted-foreground" />
-              <span>Email</span>
+              <span>Send an email</span>
               <ArrowUpRight className="h-3.5 w-3.5 text-muted-foreground" />
             </a>
 
@@ -71,13 +71,15 @@ export function Contact() {
             <button
               type="button"
               onClick={handleCopyEmail}
-              className="inline-flex items-center justify-center gap-2 rounded-md border border-border bg-card px-4 py-3 text-sm font-mono text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+              className="inline-flex items-center justify-center gap-2 rounded-md border border-border bg-card px-4 py-3.5 text-sm font-mono text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
               aria-label="Copy email address"
             >
               {copied ? (
                 <>
                   <Check className="h-4 w-4 text-[#00A86B] dark:text-[#20C67A]" />
-                  <span className="text-xs text-[#00A86B] dark:text-[#20C67A] font-sans font-medium">Copied to clipboard</span>
+                  <span className="text-xs text-[#00A86B] dark:text-[#20C67A] font-sans font-medium">
+                    Copied to clipboard
+                  </span>
                 </>
               ) : (
                 <>
@@ -89,7 +91,7 @@ export function Contact() {
           </div>
 
           <p className="text-xs text-muted-foreground font-mono pt-4">
-            Based in Alexandria, Egypt (UTC+3) • Typically respond within a few hours.
+            Based in Alexandria, Egypt (UTC+2) • Available for freelance projects worldwide.
           </p>
         </div>
       </Container>

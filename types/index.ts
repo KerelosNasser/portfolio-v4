@@ -5,7 +5,7 @@ export interface Project {
   category: string;
   problem: string;
   solution: string;
-  architecture: string;
+  outcome?: string;
   technologies: string[];
   features: string[];
   githubUrl: string;

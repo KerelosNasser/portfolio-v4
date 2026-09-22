@@ -10,7 +10,7 @@ export function Capabilities() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 md:mb-24">
           <div className="space-y-3 max-w-xl">
             <p className="text-xs font-mono uppercase tracking-wider text-muted-foreground">
-              02 — What I build
+              02 — Services
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
               Software built around your business goals.

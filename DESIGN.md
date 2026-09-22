@@ -73,10 +73,13 @@ Green is the brand accent. It is used selectively where attention matters:
 
 ## 4. Visual Hierarchy & Layout Principles
 
-### Client First, Developer Second
-1. **Outcome First**: Lead with the business problem solved and the resulting user experience.
-2. **Real Software Centerpiece**: Showcase working interfaces (AliMart storefront, Environmental Dashboard) before explaining the underlying architecture.
-3. **Tech Stack as Secondary Proof**: Frameworks (Next.js, React, TypeScript, Python) provide credibility at the end of a section, not as the headline.
+### Visual-First Case Studies
+1. **Product Visual First**: Showcase the authentic software interface before explaining problem and solution.
+2. **Concise Case Study Narrative**:
+   - **What it solves**: Real friction or business challenge.
+   - **What was built**: Specific implementation details and user capabilities.
+   - **Relevant Technology**: Supporting evidence at the bottom, not the headline.
+3. **Transparent Data Labeling**: Simulated datasets (such as the Environmental Dashboard) must always be clearly identified as models/simulations without compromising visual polish.
 
 ### Avoid the "Everything is a Card" Trap
 Do not wrap every section in `rounded-xl border bg-card shadow`. Build visual rhythm through:
@@ -84,9 +87,9 @@ Do not wrap every section in `rounded-xl border bg-card shadow`. Build visual rh
 * Thin structural borders (`#DDE3DE` in light mode, `#27302B` in dark mode)
 * Asymmetric column grids (e.g. 7-col / 5-col split)
 * Three distinct project layouts in Selected Work:
-  1. **Project 01**: Text left, real storefront UI right.
-  2. **Project 02**: Simulated data visualization left, text right.
-  3. **Project 03**: Full-width application window with text underneath.
+  1. **Project 01 (AliMart)**: Text left (5 cols), real storefront UI right (7 cols).
+  2. **Project 02 (Environmental Dashboard)**: Simulated data visualization left (7 cols), text right (5 cols).
+  3. **Project 03 (Next.js SaaS Foundation)**: Full-width application window with text & tech details underneath.
 
 ---
 
@@ -95,6 +98,15 @@ Do not wrap every section in `rounded-xl border bg-card shadow`. Build visual rh
 * **AliMart Storefront**: Real e-commerce interface with product search, category filtering, and persistent cart.
 * **Environmental Impact Dashboard**: Visual charts and metric indicators. **Must always be identified as simulated data** (never claim real-time telemetry or live production sensors).
 * **Next.js SaaS Foundation**: Authentic App Router workspace and error tracking baseline.
+
+---
+
+## 6. Accessibility & Reduced Motion
+
+* Respect `prefers-reduced-motion: reduce` across all animations and transitions.
+* Maintain minimum touch target sizes of 44×44px on mobile.
+* Ensure clear focus-visible rings with proper contrast.
+* Ensure high color contrast on dark and light modes.
 
 ---
 

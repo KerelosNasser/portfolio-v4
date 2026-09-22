@@ -13,7 +13,7 @@ export function Footer() {
           {/* Identity & Location */}
           <div className="space-y-1">
             <p className="font-semibold text-foreground">Kero</p>
-            <p className="text-xs text-muted-foreground">Full-stack developer</p>
+            <p className="text-xs text-muted-foreground">Independent Full-Stack Developer</p>
             <p className="text-xs text-muted-foreground pt-1">Alexandria, Egypt</p>
           </div>
 
@@ -58,7 +58,7 @@ export function Footer() {
 
         <div className="mt-10 pt-6 border-t border-border flex items-center justify-between text-xs text-muted-foreground">
           <p>© {currentYear} Kerolos Nasser</p>
-          <p className="font-mono text-[11px]">Independent Developer Studio</p>
+          <p className="font-mono text-[11px]">Independent Full-Stack Developer</p>
         </div>
       </Container>
     </footer>

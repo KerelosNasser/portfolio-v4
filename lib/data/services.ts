@@ -4,48 +4,48 @@ export const capabilitiesData: Capability[] = [
   {
     title: "SaaS & MVPs",
     description:
-      "Products that need authentication, dashboards, workflows, and integrations. From initial concept to a working version people can use.",
+      "Turn an idea into a functional product users can actually use. From concept to working software with auth, dashboards, and databases.",
     deliverables: [
-      "User authentication & session management",
-      "Dashboard interfaces & interactive workflows",
-      "Database schema design & migrations",
-      "Deployment to Vercel or cloud hosts",
+      "User authentication & account setup",
+      "Interactive dashboards & user workflows",
+      "Database schema & data modeling",
+      "Production deployment to your domain",
     ],
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL"],
   },
   {
     title: "Business tools",
     description:
-      "Internal apps, dashboards, and systems that replace manual work or organize company data in one place.",
+      "Replace repetitive manual workflows with custom software that centralizes company data and automates daily tasks.",
     deliverables: [
-      "Clear charts & metric summaries",
-      "Searchable, filterable data tables",
-      "Management panels & role-based views",
-      "Form handling & workflow automation",
+      "Readable metric cards & trend charts",
+      "Searchable and filterable data tables",
+      "Admin panels & role-based access",
+      "Form processing & workflow automation",
     ],
     technologies: ["React", "TypeScript", "TanStack Query", "Recharts", "Tailwind CSS"],
   },
   {
-    title: "Custom web apps",
+    title: "Custom web applications",
     description:
-      "Product interfaces built around a specific workflow or business need, designed to work smoothly on mobile and desktop.",
+      "Build web applications around your exact business requirements, designed to work smoothly on mobile and desktop screens.",
     deliverables: [
-      "Mobile-friendly, responsive layouts",
-      "Dynamic filtering, search, and catalogs",
+      "Responsive, mobile-friendly interfaces",
       "Fast page load times & clean styling",
-      "Accessible, semantic markup",
+      "Live search, filtering, and data catalogs",
+      "Accessible and semantic structure",
     ],
     technologies: ["Next.js", "React", "TypeScript", "shadcn/ui", "Tailwind CSS"],
   },
   {
     title: "APIs & backend",
     description:
-      "Practical APIs and backend services using Next.js or FastAPI to power your application reliably.",
+      "Create reliable backend systems and integrations that power your web application smoothly.",
     deliverables: [
-      "REST API route handlers & endpoints",
-      "Relational data modeling & SQL queries",
-      "External API integrations",
-      "Error handling & logging",
+      "REST API routes & endpoints",
+      "Relational SQL database design",
+      "External service integrations",
+      "Structured error logging & monitoring",
     ],
     technologies: ["Python (FastAPI)", "Next.js Route Handlers", "PostgreSQL", "Prisma"],
   },
